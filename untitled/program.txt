@@ -1,0 +1,33 @@
+a=0
+b=cos(0)
+c=sin(PI/2)
+print con(a,b,c)
+if (a<b){
+print "while\n"
+i = 0
+while(i<5){
+i= i + 1
+print "i = " + i + "\n"
+}
+print "for\n"
+for i=1,i<7,i= i+1{
+print "Hello\n"
+}
+print "do while"
+s = 0
+do{
+s = s + 1
+print "s = " + s + "\n"
+}while(s <= 9)
+fun sum (e,d){
+return e + d
+}
+print sum(b,c)
+print "\n"
+arr = [1,"Hello word",5]
+print arr + "\n"
+arr[2] = arr[2]*50
+print arr
+}else {
+print "Error"
+}
