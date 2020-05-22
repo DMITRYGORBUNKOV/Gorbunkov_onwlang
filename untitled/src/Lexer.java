@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public final class Lexer {
-    private static final String OPERATOR_CHARS = "+-*/(){}[]=<>!&|,";//симолы строки
+    private static final String OPERATOR_CHARS = "+-*/(){}[]=<>!&|,";//символы строки
 
     private static final Map<String, TokenType> OPERATORS;
     static {
@@ -50,12 +50,12 @@ public final class Lexer {
         while (pos < length) {
             final char current = peek(0);//текущий символ
             if (Character.isDigit(current)) tokenizeNumber();//проверка число
-            else if (Character.isLetter(current)) tokenizeWord();
+            else if (Character.isLetter(current)) tokenizeWord();// проверка 16 числа
             else if (current == '#') {
                 next();
                 tokenizeHexNumber();
 
-            } else if (current == '"') {
+            } else if (current == '"') {//проверка текста
                 tokenizeText();
             } else if (OPERATOR_CHARS.indexOf(current) != -1) {//проверка символ
                 tokenizeOperator();

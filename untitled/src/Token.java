@@ -1,9 +1,6 @@
 public final class Token {
     private TokenType type;
     private String text;//хранит имя переменной
-    public Token(){
-
-    }
     public Token(TokenType type, String text ){
         this.type = type;
         this.text = text;

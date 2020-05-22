@@ -188,7 +188,7 @@ public Statement parse(){
         }
         return result;
     }
-    private Expression conditionl(){
+    private Expression conditionl(){//лог выр
         Expression result = additive();
         while (true){
             if (match(TokenType.LESSER)){
@@ -251,7 +251,7 @@ private Expression unary(){
 
 return primary();
 }
-private Expression primary(){
+private Expression primary(){//числа строки
 final Token current = get(0);
 if (match(TokenType.NUMBER)){
     return new ValueExpression(Double.parseDouble (current.getText()));

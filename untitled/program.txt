@@ -1,8 +1,11 @@
 a=0
 b=cos(0)
 c=sin(PI/2)
-print con(a,b,c)
-if (a<b){
+d = (5 + 5 ) * 8
+e = sqrt(256)
+if ( 50 < d || e > d){
+con(a,b,c,d,e)
+if (a<b && b == c){
 print "while\n"
 i = 0
 while(i<5){
@@ -13,21 +16,26 @@ print "for\n"
 for i=1,i<7,i= i+1{
 print "Hello\n"
 }
-print "do while"
+print "do while\n"
 s = 0
 do{
 s = s + 1
 print "s = " + s + "\n"
 }while(s <= 9)
-fun sum (e,d){
-return e + d
+fun sum (k,l){
+return k + l
 }
-print sum(b,c)
+print sum(e,d)
 print "\n"
-arr = [1,"Hello word",5]
+arr = [1,"Hello word\t",5]
 print arr + "\n"
 arr[2] = arr[2]*50
+arr[0] = arr[1]*3
+arr[1]= 5
 print arr
 }else {
-print "Error"
+print "Error\n"
+}
+}else {
+print "end\n"
 }
